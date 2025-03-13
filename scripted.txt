@@ -1,0 +1,7 @@
+var toggleButton = document.querySelector(".homerIcon");
+Var sidebar = document.querySelector(".sidebar");
+
+homerIcon.onclick = function(){
+    sidebar.classList.toggle("sidebar");
+}
+

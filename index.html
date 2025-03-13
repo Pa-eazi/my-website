@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOT-TRADE website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="flex-div">
+        <div class="nav-left flex-div>
+            <button id="toggleSidebar">&#9776;</button> <!-- FIXED ID -->
+            <img src="menu-burger.png" class="menu-burger">
+            <img src="whatsapp.png" class="whatsapp">
+        </div>
+
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="search-box">
+                <img src="search.png" class="search" alt="search">
+        </div>
+        <img src="microphone.png" class="microphone" alt="microphone">
+    </div>
+
+<div class="nav-right flex-div">
+    <img src="NOT-TRADE COIN.png" class="NOT-TRADE">
+    <img src="settings.png">
+    <img src="play.png">
+    <img src="email.png">
+    <img src="active.png">
+</div>
+</nav>
+
+<!-- Sidebar -->
+<div class="sidebar">
+ <div class="shortcut-links">
+    <a href="#" onclick="showSection('home-section')">
+        <img src="homer.png">
+        <p>Home</p>
+    </a>
+    <a href="#" onclick="showSection('withdraw-section')">
+        <img src="withdraw.png"><p>Withdraw</p>
+    </a>
+    <a href="#" onclick="showSection('bank-section')">
+        <img src="bank.png"><p>Bank</p>
+    </a>
+    <a href="#" onclick="showSection('recharge-section')">
+        <img src="recharge.png"><p>Recharge</p>
+    </a>
+    <a href="#" onclick="showSection('invite-section')">
+        <img src="invite.png"><p>invite</p>
+    </a>
+    <a href="#" onclick="showSection('logout-section')"><!-- FIXED ID -->
+        <img src="logout.png"><p>Logout</p>
+    </a>
+</div>
+</div>
+
+    <!-- Home Section (Visible by Default) -->
+     <div id="home-section" class="section">
+        <h2>Home</h2>
+     </div>
+
+        <!-- Bank Section (Hidden by Default) -->
+    <div id="bank-section" class="section hidden">
+        <h2>Bank Details</h2>
+        <input type="text" placeholder="Account Name">
+        <input type="text" placeholder="Account Number">
+        <input type="text" placeholder="Bank Name">
+        <button>Save Bank Details</button>
+    </div>
+
+    <!-- Recharge Section (Hidden by Default) -->
+    <div id="recharge-section" class="section hidden">
+        <h2>Recharge History</h2>
+        <p>You have recharged ₦5,000 total.</p>
+    </div>
+
+     <!-- withdraw Section (Hidden by Default) -->
+     <div id="withdraw-section" class="section hidden">
+        <h2>withdraw</h2>
+        <p>minimum withdraw is #1000 charges:10%.</p>
+        <input type="number" placeholder="Enter amount" class="withdraw-input">
+        <button class="withdraw-btn">Withdraw</button>
+      </div>
+
+      <!-- Referral Section (Hidden by Default) -->
+       <div id="Referral-section" class="section hidden">
+        <h2>your Team History</h2>
+        <p><h1>Invitation Rewards</h1></p>
+    </div>
+
+    <!-- logout section (Hidden by Default) -->
+    <div id="logout-section" class="section hidden"><!-- FIXED ID -->
+        <h2>Are you sure you want to logout?</h2>
+        <button onclick="logoutuser()">Yes, Logout</button>
+        <button onclick="showSection('home-section')">cancel</button><!-- FIXED FUNCTION NAME -->
+       </div>
+
+</nav>
+ </div>
+
+ <!-- ------- main ------- -->
+ <div class="container">
+    <div id="banner" class="banner"><!-- Added ID="banner" -->
+        <img src="NOT-TRADE COIN.jpg" alt="Top Image">
+    </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
